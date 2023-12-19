@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+about
+{% endblock %}
+
+{% block content %}
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+    .all{
+        font-family: Arial, sans-serif;
+        display: inline;
+    }
+    h1{
+        font-weight: bold;
+    }
+    img{
+        width: 20%;
+        border-radius: 100%;
+    }
+    .soc{
+        gap: 10px;
+        display: flex;
+    }
+    a{
+        font-size:30px; 
+        color: black;
+        cursor: pointer;
+    }
+    a:hover{
+        top: 10px;
+    }
+</style>
+    <div class="all">
+        <img src="https://sun9-76.userapi.com/impg/7qSx8HRCG7n_ul_C0geczod8xXYhJdllljyFVA/a7Onz-n-K0U.jpg?size=1152x1280&quality=96&sign=aee62eba8a970fee85ac779f6e577744&type=album" alt="">
+        <h1>Тимофей Кольцов</h1>
+        <div class="about">
+            <p>Банан</p>
+        </div>
+        <div class="soc">
+            <a href="@Dobrenikie"><i class='fa fa-telegram'></i></a>
+            <a href="https://vk.com/korh_lol"><i class="fa fa-vk"></i></a>
+            <a href="https://github.com/Dobrenikie"><i class='fa fa-github'></i></a>
+        </div>
+    </div>
+{% endblock %}
